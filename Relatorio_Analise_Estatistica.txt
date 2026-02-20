@@ -1,0 +1,121 @@
+RELATÓRIO TÉCNICO – ANÁLISE ESTATÍSTICA
+
+1.  INTRODUÇÃO
+
+Este relatório apresenta uma análise estatística realizada a partir de
+uma base de dados contendo informações sobre turmas, cursos, sexo dos
+estudantes e notas na disciplina de Cálculo A. Foram aplicados métodos
+de inferência estatística com o objetivo de analisar proporções e
+médias, utilizando intervalos de confiança e testes de hipótese.
+
+------------------------------------------------------------------------
+
+2.  OBJETIVOS
+
+• Calcular o intervalo de confiança para a diferença entre proporções de
+mulheres nas turmas A e B; 
+
+• Realizar teste de hipótese para proporção
+de variáveis categóricas (Curso: Computação vs Física); 
+
+• Realizar teste
+de hipótese para média de variável numérica (Notas de Cálculo A); 
+
+• Interpretar estatisticamente os resultados obtidos.
+
+------------------------------------------------------------------------
+
+3.  MATERIAIS E MÉTODOS
+
+A análise foi realizada utilizando a linguagem Python, com as
+bibliotecas:
+
+-   pandas (manipulação de dados)
+-   math (operações matemáticas)
+
+O nível de significância adotado foi de 5% (α = 0,05), correspondente a
+95% de confiança.
+
+3.1 Intervalo de Confiança para Duas Proporções
+
+Fórmulas utilizadas:
+
+p̂ = x / n
+
+EP = √ [ (p̂A(1-p̂A)/nA) + (p̂B(1-p̂B)/nB) ]
+
+IC = (p̂A - p̂B) ± 1.96 * EP
+
+3.2 Teste de Hipótese para Duas Proporções (Teste Z)
+
+H0: Pa = Pb H1: Pa ≠ Pb
+
+Proporção combinada: p̂ = (xA + xB) / (nA + nB)
+
+Erro padrão: EP = √ [ p̂(1 - p̂) * (1/nA + 1/nB) ]
+
+Estatística do teste: Z = (Pa - Pb) / EP
+
+3.3 Teste de Hipótese para Média (Teste t)
+
+H0: μ = μ0 H1: μ ≠ μ0
+
+Média amostral: x̄ = Σx / n
+
+Desvio padrão amostral: s = √ [ Σ(x - x̄)² / (n - 1) ]
+
+Erro padrão: EP = s / √n
+
+Estatística t: t = (x̄ - μ0) / EP
+
+------------------------------------------------------------------------
+
+4.  RESULTADOS
+
+4.1 Intervalo de Confiança – Proporção de Mulheres
+
+Foi calculado o intervalo de confiança para a diferença entre as
+proporções de mulheres nas turmas A e B. A análise indicou a diferença
+entre as proporções e seus limites inferior e superior com 95% de
+confiança.
+
+4.2 Teste de Hipótese – Proporção (Computação vs Física)
+
+A estatística Z obtida foi comparada com o valor crítico ±1.96. O
+resultado indicou que a estatística do teste permaneceu dentro da região
+de não rejeição. Conclusão: Não há evidência estatística suficiente para
+rejeitar H0 ao nível de 5%.
+
+4.3 Teste de Hipótese – Média das Notas (Cálculo A)
+
+Foi testada a hipótese de que a média das notas dos alunos de Computação
+é igual a 5. A estatística t calculada foi comparada com o valor crítico
+da distribuição t. O valor obtido permaneceu dentro da região de não
+rejeição. Conclusão: Não há evidência estatística suficiente para
+rejeitar H0 ao nível de 5%.
+
+------------------------------------------------------------------------
+
+5.  CONCLUSÃO
+
+Os testes estatísticos realizados indicam que:
+
+• A diferença entre as proporções analisadas não apresentou evidência
+estatística suficiente para rejeição da hipótese nula nos testes
+realizados;
+
+• A média das notas analisadas não apresentou diferença
+estatisticamente significativa em relação à média hipotética testada; 
+
+•Os métodos de inferência estatística aplicados foram adequados ao tipo
+de variável analisada.
+
+------------------------------------------------------------------------
+
+6.  RELATO REFLEXIVO
+
+Entre as principais dificuldades, é relevante ressaltar que a biblioteca pandas foi um grande desafio, 
+principalmente na parte de manipulação dos dados da tabela.
+
+Foi uma excelente atividade para colocar meus conhecimentos de Computação e lógica à prova, 
+tanto na parte matemática quanto na computacional, além da aplicação prática dos conceitos de Estatística.
